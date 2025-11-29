@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EditKaro — Contact</title>
+  <meta name="description" content="Contact EditKaro for video editing and social marketing projects" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">Edit</div>
+        <div>
+          <h1>EditKaro.in</h1>
+          <p class="small muted">Social media marketing & video editing</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="cta" href="contact.html">Work with us</a>
+      </nav>
+    </header>
+
+    <section style="margin-top:12px">
+      <h2>Contact Us</h2>
+      <p class="muted">Tell us about your project — we’ll respond within 24–48 hours.</p>
+
+      <form id="contactForm" class="contact-form" style="margin-top:16px">
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+        <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" />
+        <textarea id="message" name="message" placeholder="Describe your project" required></textarea>
+        <div style="display:flex;gap:10px;align-items:center">
+          <button type="submit" class="btn primary">Send Message</button>
+          <div id="contactFormStatus" class="muted small" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
+    <footer style="margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.02)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>EditKaro.in</strong>
+          <div class="muted small">Social media marketing & video editing</div>
+        </div>
+        <div class="muted small">© <span id="year3"></span> EditKaro. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

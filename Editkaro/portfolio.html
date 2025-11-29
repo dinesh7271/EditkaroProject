@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EditKaro — Portfolio</title>
+  <meta name="description" content="EditKaro.in — Social media marketing & video editing portfolio" />
+  <meta name="keywords" content="portfolio, video editing, reels, ads, color grading" />
+  <meta property="og:title" content="EditKaro.in — Portfolio" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23004d40'/%3E%3Ctext x='50' y='58' font-size='42' text-anchor='middle' fill='white' font-family='Arial'%3EE%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">Edit</div>
+        <div>
+          <h1>EditKaro.in</h1>
+          <p class="small muted">Social media marketing & video editing</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="contact.html">Work with us</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Portfolio — Short films, edits, ads & more</h2>
+        <p>Curated work from EditKaro.in showcasing short-form social edits, long-form content, gaming clips, football edits, eCommerce ads, colour grading, anime edits, and documentaries. Filter, preview and share.</p>
+        <div class="hero-actions">
+          <button class="btn" id="btnAll">Show all</button>
+          <button class="btn primary" id="btnContact">Contact</button>
+        </div>
+      </div>
+
+      <div class="hero-preview" aria-hidden>
+        <video class="preview-video" muted autoplay loop playsinline poster="Assets/preview.webp">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser doesn't support HTML5 video.
+        </video>
+      </div>
+    </section>
+
+    <div class="filters" role="toolbar" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="short">Short-form</button>
+      <button class="filter-btn" data-filter="long">Long-form</button>
+      <button class="filter-btn" data-filter="gaming">Gaming</button>
+      <button class="filter-btn" data-filter="football">Football</button>
+      <button class="filter-btn" data-filter="ecom">eCommerce</button>
+      <button class="filter-btn" data-filter="ads">Ads</button>
+      <button class="filter-btn" data-filter="doc">Documentary</button>
+      <button class="filter-btn" data-filter="grading">Color Grading</button>
+      <button class="filter-btn" data-filter="anime">Anime Edits</button>
+    </div>
+
+    <main class="grid" id="gallery">
+
+      <article class="card" data-category="short" data-title="Cinematic Short — Ocean" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/ClimaticshotOcean.webp">
+        <img loading="lazy" class="thumb" src="Assets/ClimaticshotOcean.webp" alt="Cinematic Short — Ocean" />
+        <div class="meta">
+          <div>
+            <div class="title">Cinematic Short — Ocean</div>
+            <div class="cat small muted">Short-form • 0:38</div>
+          </div>
+          <div class="badge">Short</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="gaming" data-title="Speedrun Highlights" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/SpeedrunHighlights.webp">
+        <img loading="lazy" class="thumb" src="Assets/SpeedrunHighlights.webp" alt="Speedrun Highlights" />
+        <div class="meta">
+          <div>
+            <div class="title">Speedrun Highlights</div>
+            <div class="cat small muted">Gaming • 1:20</div>
+          </div>
+          <div class="badge">Gaming</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="football" data-title="Football Edit — Goalframe" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/FootballGoalframe.webp">
+        <img loading="lazy" class="thumb" src="Assets/FootballGoalframe.webp" alt="Football Edit — Goalframe" />
+        <div class="meta">
+          <div>
+            <div class="title">Football Edit — Goalframe</div>
+            <div class="cat small muted">Football • 0:50</div>
+          </div>
+          <div class="badge">Football</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="ecom" data-title="Product Ad — SmartWatch" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/Smartwatch.webp">
+        <img loading="lazy" class="thumb" src="Assets/Smartwatch.webp" alt="Product Ad — SmartWatch" />
+        <div class="meta">
+          <div>
+            <div class="title">Product Ad — SmartWatch</div>
+            <div class="cat small muted">eCommerce • 0:30</div>
+          </div>
+          <div class="badge">Ad</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="grading" data-title="Color Grade Reel" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/Colorgrade.webp">
+        <img loading="lazy" class="thumb" src="Assets/Colorgrade.webp" alt="Color Grade Reel" />
+        <div class="meta">
+          <div>
+            <div class="title">Color Grade Reel</div>
+            <div class="cat small muted">Color Grading • 1:50</div>
+          </div>
+          <div class="badge">Grading</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="anime" data-title="Anime Edit — Retro" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/Animeedit.webp">
+        <img loading="lazy" class="thumb" src="Assets/Animeedit.webp" alt="Anime Edit — Retro" />
+        <div class="meta">
+          <div>
+            <div class="title">Anime Edit — Retro</div>
+            <div class="cat small muted">Anime • 0:55</div>
+          </div>
+          <div class="badge">Anime</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="doc" data-title="Documentary Snippet — Streets" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/Documentrysnippet.webp">
+        <img loading="lazy" class="thumb" src="Assets/Documentrysnippet.webp" alt="Documentary Snippet — Streets" />
+        <div class="meta">
+          <div>
+            <div class="title">Documentary Snippet — Streets</div>
+            <div class="cat small muted">Documentary • 3:20</div>
+          </div>
+          <div class="badge">Doc</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="long" data-title="Long-form Interview" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-thumb="Assets/longinterview.webp">
+        <img loading="lazy" class="thumb" src="Assets/longinterview.webp" alt="Long-form Interview" />
+        <div class="meta">
+          <div>
+            <div class="title">Long-form Interview</div>
+            <div class="cat small muted">Long-form • 12:00</div>
+          </div>
+          <div class="badge">Long</div>
+        </div>
+      </article>
+
+    </main>
+
+    <section id="contact" style="margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <div>
+        <h3 style="margin:0 0 6px">Want us to edit your content?</h3>
+        <p class="muted small" style="margin:0">We handle social ad creatives, long-form editing, highlight reels, and color grading. Tell us about your project.</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a href="mailto:hello@editkaro.in" class="btn primary">Email Us</a>
+        <a href="https://wa.me/919876543210" class="btn">WhatsApp</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-inner">
+        <div id="mediaContainer"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--muted)">
+          <div id="mediaTitle">Project title</div>
+          <div style="display:flex;gap:8px">
+            <button class="btn" id="shareBtn">Share</button>
+            <button class="btn" id="downloadBtn">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
